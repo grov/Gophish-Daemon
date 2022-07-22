@@ -4,7 +4,11 @@ Daemon for gophish service
 
 `nano /etc/systemd/system/gophish.service`
 
-[Unit]
+
+#Add these lines in the gophish.service file
+#Do not forget to change the red information
+
+`[Unit]
 Description=Gophish Server
 After=network.target
 StartLimitIntervalSec=0
@@ -15,7 +19,7 @@ WorkingDirectory=/root/gophish
 ExecStart=/root/gophish/gophish
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=multi-user.target`
 
 
 `systemctl daemon-reload`
