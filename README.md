@@ -3,7 +3,7 @@
 
 `nano /etc/systemd/system/gophish.service`
 
-> Add these lines in the gophish.service file
+> Add these lines in the gophish.service file  
 > Do not forget to change the directories
 
 ```
