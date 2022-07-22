@@ -22,7 +22,7 @@ ExecStart=/root/gophish/gophish
 [Install]
 WantedBy=multi-user.target`
 ```
-
+> Then enable and start the service
 ```
 systemctl daemon-reload
 systemctl start gophish
