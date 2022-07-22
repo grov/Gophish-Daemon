@@ -1,12 +1,10 @@
 # Gophish-Daemon
-Daemon for gophish service
-
+> Daemon for gophish service
 
 `nano /etc/systemd/system/gophish.service`
 
-
-#Add these lines in the gophish.service file
-#Do not forget to change the information in bold
+> Add these lines in the gophish.service file
+> Do not forget to change the directories
 
 ```
 [Unit]
@@ -16,8 +14,8 @@ StartLimitIntervalSec=0
 [Service]
 Type=simple
 User=root
-WorkingDirectory=**/root/gophish**
-ExecStart=**/root/gophish/gophish**
+WorkingDirectory=/root/gophish
+ExecStart=/root/gophish/gophish
 
 [Install]
 WantedBy=multi-user.target`
